@@ -13,7 +13,7 @@ import com.miroinvest.testproject.R
 import com.miroinvest.testproject.core.utils.ProgressUtils
 
 
-class BaseActivity : AppCompatActivity() {
+open class BaseActivity : AppCompatActivity() {
     private lateinit var progressUtils: ProgressUtils
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)

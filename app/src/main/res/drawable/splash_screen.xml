@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/white"/> <!-- Background color -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:tileMode="disabled"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_invest"/>
+    </item>
+</layer-list>

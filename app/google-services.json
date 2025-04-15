@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "157383681879",
+    "project_id": "mircovest",
+    "storage_bucket": "mircovest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157383681879:android:fed0d290c92ed695600012",
+        "android_client_info": {
+          "package_name": "com.miroinvest.testproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo_xk5BSsgrvOnqc9MXpJDnq0htjsZmys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

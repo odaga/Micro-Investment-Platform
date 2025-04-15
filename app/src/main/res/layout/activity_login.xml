@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/civLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70ssp"
+                android:layout_marginTop="@dimen/_25ssp"
+                android:layout_marginBottom="@dimen/_20ssp"
+                android:src="@drawable/ic_invest"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:text="Invest | Grow | Thrive"
+                android:textColor="@color/grey_80"
+                android:textSize="@dimen/_16ssp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/credentials_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20ssp"
+                android:layout_marginEnd="@dimen/_20ssp"
+                android:layout_marginBottom="@dimen/_5ssp"
+                app:cardCornerRadius="@dimen/_10ssp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_20ssp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/clPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20ssp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/agent_number_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10ssp"
+                                android:text="Username"
+                                android:layout_marginBottom="@dimen/_5ssp"
+                                android:textSize="@dimen/_10ssp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/email_field_layout"
+                                style="@style/TextInputStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/agent_number_label">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/email_field"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:hint="Email"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="text"
+                                    android:letterSpacing="0.1"
+                                    android:selectAllOnFocus="false"
+                                    android:singleLine="true" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/pinView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_18ssp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/mtvPhoneLabel">
+
+                            <TextView
+                                android:id="@+id/agent_pin_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10ssp"
+                                android:layout_marginBottom="@dimen/_5ssp"
+                                android:text="PIN"
+                                android:textSize="@dimen/_10ssp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/password_field_layout"
+                                style="@style/TextInputStyle"
+                                app:passwordToggleEnabled="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/password_field"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Password"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textPassword"
+
+                                    android:letterSpacing="0.1"
+                                    android:selectAllOnFocus="false"
+                                    android:singleLine="true" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_sign_in"
+                            style="@style/PrimaryBtnStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40ssp"
+                            android:layout_marginTop="@dimen/_20ssp"
+                            android:text="Sign In" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/_20ssp"
+                            android:layout_marginBottom="@dimen/_5ssp">
+
+                            <CheckBox
+                                android:id="@+id/terms_decision"
+                                android:layout_width="30dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentStart="true" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_5ssp"
+                                android:autoSizeTextType="uniform"
+                                android:layout_toEndOf="@+id/terms_decision"
+                                android:text="Remember me" />
+
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

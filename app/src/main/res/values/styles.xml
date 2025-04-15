@@ -3,6 +3,14 @@
     <!-- set the rounded drawable as background to your bottom sheet -->
     <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
 
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryVariant">@color/light_green</item>
+        <item name="colorSecondary">@color/grey_80</item>
+        <item name="android:statusBarColor">@color/primary_green</item>
+    </style>
+
     <style name="BaseBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="android:windowIsFloating">false</item>
         <item name="bottomSheetStyle">@style/BottomSheet</item>
@@ -22,7 +30,6 @@
     </style>
 
     <!--    Custom bottom sheet-->
-
     <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
         <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>

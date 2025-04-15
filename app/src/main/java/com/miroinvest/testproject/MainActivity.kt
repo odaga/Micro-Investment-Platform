@@ -48,9 +48,9 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.portfolio_fragment -> {
-//                    navController.navigate(R.id.portFolioFragment)
+                    navController.navigate(R.id.portFolioFragment)
 //                    navController.navigate(R.id.withdrawFragment)
-                    navController.navigate(R.id.investmentFragment)
+//                    navController.navigate(R.id.investmentFragment)
                     true
                 }
 

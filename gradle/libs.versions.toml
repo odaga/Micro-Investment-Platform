@@ -9,6 +9,7 @@ compressor = "3.0.1"
 datastore = "1.1.4"
 firebaseCrashlyticsGradle = "3.0.2"
 fragmentKtx = "1.8.6"
+activityKtx = "1.8.6"
 googleServices = "4.4.2"
 gradle = "8.8.2"
 gson = "2.10.1"
@@ -54,6 +55,8 @@ startupRuntime = "1.2.0"
 timber = "4.7.1"
 workRuntimeKtx = "2.10.0"
 workRuntimeKtxVersion = "2.10.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseAuth = "23.2.0"
 
 [libraries]
 alerter = { module = "com.github.tapadoo:alerter", version.ref = "alerter" }
@@ -62,6 +65,7 @@ androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = 
 androidx-datastore = { module = "androidx.datastore:datastore", version.ref = "datastore" }
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
 androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltCompiler" }
 androidx-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hiltCompiler" }
 androidx-lifecycle-compiler = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "lifecycleViewmodelKtx" }
@@ -115,9 +119,11 @@ secrets-gradle-plugin = { module = "com.google.android.libraries.mapsplatform.se
 ssp-android = { module = "com.intuit.ssp:ssp-android", version.ref = "sspAndroid" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeKtx" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 
