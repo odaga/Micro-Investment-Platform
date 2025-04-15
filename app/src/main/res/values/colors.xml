@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#2f4858</color>
+    <color name="primary_green">#059669</color>
+    <color name="light_green">#ECFDF5</color>
+
+    <color name="black">#FF333333</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_light_bg">#cccdcf</color>
+    <color name="gray_text">#777</color>
+    <color name="light_bg">#efefef</color>
+
+    <color name="divider_color">#66777777</color>
+
+    <color name="success">#05cc46</color>
+    <color name="danger">#f54025</color>
+
+    <color name="success_60">#0fa319</color>"
+
+    <color name="success_80">#150C5924</color>
+    <color name="danger_80">#22f54025</color>
+
+
+    <color name="dark_bg_70">#12181b</color>
+    <color name="dark_bg_60">#182024</color>
+    <color name="dark_bg_50">#1f282d</color>
+    <color name="dark_bg_20">#2212181b</color>
+    <color name="dark_bg_15">#5512181b</color>
+
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+    <color name="grey_95">#1a1a1a</color>
+    <color name="grey_100_">#0d0d0d</color>
+
+    <color name="transparent">#0000ffff</color>
+
+    <color name="bg">#F6F3F3</color>
+</resources>

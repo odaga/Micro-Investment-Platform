@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.investment.InvestmentFragment">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_layout" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:layout_above="@+id/invest_btn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:layout_marginEnd="@dimen/_10ssp"
+                android:layout_marginBottom="@dimen/_20ssp"
+                app:cardCornerRadius="@dimen/_5ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10ssp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Plan Details"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60ssp"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="12">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_50ssp"
+                            android:layout_weight="4"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginEnd="@dimen/_5ssp"
+                                    android:src="@drawable/ic_trend_up"
+                                    app:tint="@color/primary_green" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Daily Returns"
+                                    android:textColor="@color/gray_text" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/interest_rate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5ssp"
+                                android:text="2%"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/_13ssp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_50ssp"
+                            android:layout_weight="4"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginEnd="@dimen/_5ssp"
+                                    android:src="@drawable/ic_time"
+                                    app:tint="@color/primary_green" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lock Peroid"
+                                    android:textColor="@color/gray_text" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/lock_period"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5ssp"
+                                android:text="30 Days"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/_13ssp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_50ssp"
+                            android:layout_weight="4"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginEnd="@dimen/_5ssp"
+                                    android:src="@drawable/ic_initial"
+                                    app:tint="@color/primary_green" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Min Invest"
+                                    android:textColor="@color/gray_text" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/minimum_investment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5ssp"
+                                android:text="$500"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/_13ssp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_10ssp"
+                android:layout_marginBottom="@dimen/_20ssp"
+                app:cardCornerRadius="@dimen/_5ssp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10ssp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Investment Amount"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15ssp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/agent_number_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10ssp"
+                            android:layout_marginBottom="@dimen/_5ssp"
+                            android:text="Amount (UGX)"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/amount_layout"
+                            style="@style/TextInputStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/agent_number_label">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Min. 500"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:selectAllOnFocus="false"
+                                android:singleLine="true" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15ssp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10ssp"
+                            android:layout_marginBottom="@dimen/_5ssp"
+                            android:text="Adjust Amount"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <SeekBar
+                            android:id="@+id/seekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:max="100"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/custom_seekbar_progress" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/min_amount_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10ssp"
+                                android:layout_marginTop="@dimen/_5ssp"
+                                android:layout_alignParentStart="true"
+                                android:text="Min"
+                                android:textAlignment="textStart" />
+
+                            <TextView
+                                android:id="@+id/max_amount_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/_10ssp"
+                                android:layout_marginTop="@dimen/_5ssp"
+                                android:text="Max"
+                                android:textAlignment="textStart" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></RelativeLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <Button
+        android:id="@+id/invest_btn"
+        style="@style/PrimaryBtnStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50ssp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10ssp"
+        android:layout_marginEnd="@dimen/_10ssp"
+        android:layout_marginBottom="@dimen/_20ssp"
+        android:text="Invest Now" />
+
+
+</RelativeLayout>

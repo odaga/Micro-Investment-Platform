@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50ssp"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:elevation="@dimen/_5ssp">
+
+
+    <RelativeLayout
+        android:id="@+id/back_button"
+        android:layout_width="@dimen/_40ssp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_10ssp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="18sp"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/grey" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_25ssp"
+        android:layout_marginEnd="@dimen/_15ssp"
+        android:layout_toEndOf="@+id/back_button"
+        android:text="@string/title"
+        android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/_20ssp" />
+
+
+</RelativeLayout>

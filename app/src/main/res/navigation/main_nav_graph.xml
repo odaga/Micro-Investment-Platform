@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.miroinvest.testproject.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_portFolioFragment"
+            app:destination="@id/portFolioFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_withdrawFragment"
+            app:destination="@id/withdrawFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_investmentFragment"
+            app:destination="@id/investmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/portFolioFragment"
+        android:name="com.miroinvest.testproject.ui.portFolio.PortFolioFragment"
+        android:label="fragment_port_folio"
+        tools:layout="@layout/fragment_port_folio" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.miroinvest.testproject.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/withdrawFragment"
+        android:name="com.miroinvest.testproject.ui.withdrawals.WithdrawFragment"
+        android:label="fragment_withdraw"
+        tools:layout="@layout/fragment_withdraw" />
+    <fragment
+        android:id="@+id/investmentFragment"
+        android:name="com.miroinvest.testproject.ui.investment.InvestmentFragment"
+        android:label="fragment_investment"
+        tools:layout="@layout/fragment_investment" />
+</navigation>

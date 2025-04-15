@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- set the rounded drawable as background to your bottom sheet -->
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+    <style name="BaseBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/dialog_rounded_corners_bg</item>
+    </style>
+    <!-- end rounded drawable -->
+
+    <style name="AlerterStyle">
+        <item name="android:textColor">?colorOnPrimary</item>
+        <item name="android:textSize">@dimen/_17ssp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontWeight">400</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!--    Custom bottom sheet-->
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/dialog_rounded_corners_bg</item>
+        <item name="behavior_peekHeight">800dp</item>
+    </style>
+</resources>

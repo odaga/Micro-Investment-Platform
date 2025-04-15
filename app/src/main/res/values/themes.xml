@@ -1,0 +1,116 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TestProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary_green</item>
+
+        <item name="android:fontFamily">@font/myraid</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="bgColor">@color/light_bg</item>
+        <item name="bgIconColor">@color/grey_80</item>
+        <item name="foregroundIconColor">@color/grey</item>
+        <item name="iconRippleColor">@color/primary_green</item>
+        <item name="actionRippleColor">@color/dark_bg_15</item>
+        <item name="bgSearchColor">@color/white</item>
+        <item name="appRippleColor">@color/primary_green</item>
+        <item name="toolbarColor">@color/white</item>
+        <item name="android:windowBackground">@color/bg</item>
+
+        <!--        Pin view-->
+        <item name="pinViewStyle">@style/PinWidget.PinView</item>
+    </style>
+
+    <style name="Theme.TestProject" parent="Base.Theme.TestProject" />
+
+    <style name="PinViewStyle">
+        <item name="cursorColor">@color/primary_green</item>
+        <item name="cursorWidth">2dp</item>
+        <item name="hideLineWhenFilled">false</item>
+        <item name="itemCount">4</item>
+        <item name="itemHeight">?actionBarSize</item>
+        <item name="itemRadius">10dp</item>
+        <item name="itemSpacing">16dp</item>
+        <item name="itemWidth">?actionBarSize</item>
+        <item name="lineColor">@color/grey_40</item>
+        <item name="lineWidth">2dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="viewType">rectangle</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:itemBackground">@drawable/et_border_item_bg</item>
+    </style>
+
+
+    <style name="CustomTextInputDropdownLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/grey_80</item>
+        <item name="backgroundColor">@color/grey_80</item>
+        <item name="hintEnabled">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="boxStrokeColor">@color/grey</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_8ssp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_8ssp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_8ssp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_8ssp</item>
+        <item name="strokeColor">?attr/bgIconColor</item>
+    </style>
+
+    <style name="PrimaryBtnStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="backgroundTint">@color/primary_green</item>
+        <item name="cornerRadius">@dimen/_8ssp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:letterSpacing">0.0</item>
+    </style>
+
+
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:inset">0dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="strokeColor">@color/primary_green</item>
+        <item name="cornerRadius">@dimen/_8ssp</item>
+        <item name="android:textColor">@color/primary_green</item>
+    </style>
+
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/grey_80</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxBackgroundColor">@color/grey_10</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_8ssp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_8ssp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_8ssp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_8ssp</item>
+        <item name="android:color">@color/primary_green</item>
+        <item name="hintEnabled">true</item>
+    </style>
+
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/rounded_corner</item>
+    </style>
+
+    <style name="FullScreenBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/FullScreenBottomSheetStyle</item>
+    </style>
+
+    <style name="FullScreenBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+</resources>
