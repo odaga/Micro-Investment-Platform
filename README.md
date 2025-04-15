@@ -53,11 +53,6 @@ A simplified micro-investment app built as part of a take-home assignment for En
 
 ---
 
-## 📷 Screenshots
-> *(Add screenshots here if available, or skip this section for now)*
-
----
-
 ## ✅ Bonus Features
 - Simple and clean UI/UX
 - Separation of concerns using MVVM
