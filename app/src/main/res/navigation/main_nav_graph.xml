@@ -27,7 +27,11 @@
         android:id="@+id/portFolioFragment"
         android:name="com.miroinvest.testproject.ui.portFolio.PortFolioFragment"
         android:label="fragment_port_folio"
-        tools:layout="@layout/fragment_port_folio" />
+        tools:layout="@layout/fragment_port_folio" >
+        <action
+            android:id="@+id/action_portFolioFragment_to_withdrawFragment"
+            app:destination="@id/withdrawFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.miroinvest.testproject.ui.profile.ProfileFragment"
@@ -37,7 +41,11 @@
         android:id="@+id/withdrawFragment"
         android:name="com.miroinvest.testproject.ui.withdrawals.WithdrawFragment"
         android:label="fragment_withdraw"
-        tools:layout="@layout/fragment_withdraw" />
+        tools:layout="@layout/fragment_withdraw" >
+        <action
+            android:id="@+id/action_withdrawFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/investmentFragment"
         android:name="com.miroinvest.testproject.ui.investment.InvestmentFragment"

@@ -1,6 +1,5 @@
 package com.miroinvest.testproject.ui.adapters
 
-import android.app.Activity
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Button
@@ -17,11 +16,12 @@ class PlansAdapter(
 
     inner class PlanViewHolder(binding: PlanItemRowBinding) : RecyclerView.ViewHolder
         (binding.root) {
-        val planName: TextView = itemView.findViewById(R.id.investment_type)
-        val investButton: Button = itemView.findViewById(R.id.button_invest)
-        val minimumAmount: TextView = itemView.findViewById(R.id.minimum_investment)
-        val returnRate: TextView = itemView.findViewById(R.id.return_rate)
-        val lockPeriod: TextView = itemView.findViewById(R.id.lock_period)
+
+        val planName = binding.investmentType
+        val investButton = binding.buttonInvest
+        val minimumAmount = binding.minimumInvestment
+        val returnRate = binding.returnRate
+        val lockPeriod = binding.lockPeriod
     }
 
 
@@ -44,7 +44,7 @@ class PlansAdapter(
     override fun onBindViewHolder(holder: PlanViewHolder, position: Int) {
         with(holder) {
             investButton.setOnClickListener {
-                onPlanClickListener?.onClick(plans[position].id)
+                onPlanClickListener?.onClick(plans[position].name)
             }
 
             minimumAmount.text = plans[position].minAmount

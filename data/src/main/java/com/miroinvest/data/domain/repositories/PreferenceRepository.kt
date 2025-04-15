@@ -1,5 +1,6 @@
 package com.miroinvest.data.domain.repositories
 
+import com.miroinvest.data.models.InvestmentEntity
 import com.miroinvest.data.models.PlanEntity
 import com.miroinvest.data.models.TransactionEntity
 import com.miroinvest.data.models.User
@@ -22,5 +23,7 @@ interface PreferenceRepository {
     suspend fun getTransactions(): List<TransactionEntity>
 
     suspend fun getSingleTransaction(transactionId: String): TransactionEntity?
+
+    suspend fun getInvestments(): List<InvestmentEntity>
 
 }

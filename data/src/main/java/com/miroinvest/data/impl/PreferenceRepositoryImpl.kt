@@ -3,9 +3,11 @@ package com.miroinvest.data.impl
 import android.content.SharedPreferences
 import androidx.core.content.edit
 import com.miroinvest.data.domain.repositories.PreferenceRepository
+import com.miroinvest.data.models.InvestmentEntity
 import com.miroinvest.data.models.PlanEntity
 import com.miroinvest.data.models.TransactionEntity
 import com.miroinvest.data.models.User
+import com.miroinvest.data.room.dao.InvestmentDao
 import com.miroinvest.data.room.dao.PlanDao
 import com.miroinvest.data.room.dao.TransactionEntityDao
 import kotlinx.coroutines.flow.Flow
@@ -16,7 +18,8 @@ import javax.inject.Inject
 class PreferenceRepositoryImpl @Inject constructor(
     private val encryptedPreferences: SharedPreferences,
     private val planDao: PlanDao,
-    private val transactionDao: TransactionEntityDao
+    private val transactionDao: TransactionEntityDao,
+    private val investmentDao: InvestmentDao
 ) : PreferenceRepository {
 
      override suspend fun isDatabaseSeeded(): Flow<Boolean> = flow {
@@ -64,6 +67,10 @@ class PreferenceRepositoryImpl @Inject constructor(
 
     override suspend fun getSingleTransaction(transactionId: String): TransactionEntity? {
         return transactionDao.getSingleTransaction(transactionId)
+    }
+
+    override suspend fun getInvestments(): List<InvestmentEntity> {
+        return investmentDao.getInvestments()
     }
 
 

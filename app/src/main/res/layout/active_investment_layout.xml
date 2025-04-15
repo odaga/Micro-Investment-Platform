@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
     android:id="@+id/card"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/_5ssp"
     app:cardCornerRadius="@dimen/_8ssp">
@@ -63,6 +63,7 @@
                     android:text="Initial" />
 
                 <TextView
+                    android:id="@+id/initial_amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
@@ -83,6 +84,7 @@
                     android:text="Current" />
 
                 <TextView
+                    android:id="@+id/current_amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
@@ -100,13 +102,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:text="Return" />
+                    android:text="Return Rate" />
 
                 <TextView
+                    android:id="@+id/return_rate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:text="Return" />
+                    android:text="Return Rate" />
 
             </RelativeLayout>
 
@@ -123,6 +126,7 @@
                     android:text="Lock Period" />
 
                 <TextView
+                    android:id="@+id/lock_period"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
@@ -131,16 +135,56 @@
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5ssp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Status" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Status" />
+
+
+            </RelativeLayout>
+
 
         </LinearLayout>
 
-        <Button
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_50ssp"
-            style="@style/PrimaryBtnStyle"
-            android:text="Withdraw Now"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/details_view"
-            android:layout_margin="@dimen/_5ssp" />
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/info_button"
+                style="@style/OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40ssp"
+                android:layout_margin="@dimen/_5ssp"
+                android:text="Locked For 12 days"
+                android:textSize="@dimen/_12ssp" />
+
+            <Button
+                android:id="@+id/withdraw_button"
+                style="@style/PrimaryBtnStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35ssp"
+                android:layout_margin="@dimen/_5ssp"
+                android:text="Withdraw Now"
+                android:textSize="@dimen/_12ssp" />
+
+
+        </LinearLayout>
 
 
     </RelativeLayout>

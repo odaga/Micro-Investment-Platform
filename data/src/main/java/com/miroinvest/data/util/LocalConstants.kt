@@ -1,5 +1,6 @@
 package com.miroinvest.data.util
 
+import com.miroinvest.data.models.InvestmentEntity
 import com.miroinvest.data.models.PlanEntity
 
 object LocalConstants {
@@ -47,4 +48,56 @@ object LocalConstants {
             maxAmount = "50000"
         )
     )
+
+    val dummyInvestments = arrayListOf(
+        InvestmentEntity(
+            id = "inv_001",
+            planType = "Starter Plan",
+            name = "Starter Savings",
+            returnRate = "5%",
+            lockPeriod = "3 months",
+            initialAmount = "200",
+            currentAmount = "210",
+            startDate = "2025-01-01",
+            status = "Active",
+            endDate = "2025-04-01"
+        ),
+        InvestmentEntity(
+            id = "inv_002",
+            planType = "Silver Plan",
+            name = "Silver Investment",
+            returnRate = "7%",
+            lockPeriod = "6 months",
+            initialAmount = "1500",
+            currentAmount = "1605",
+            startDate = "2024-12-15",
+            status = "Active",
+            endDate = "2025-06-15"
+        ),
+        InvestmentEntity(
+            id = "inv_003",
+            planType = "Gold Plan",
+            name = "Gold Vault",
+            returnRate = "10%",
+            lockPeriod = "12 months",
+            initialAmount = "5000",
+            currentAmount = "5500",
+            startDate = "2024-08-01",
+            status = "Active",
+            endDate = "2025-08-01"
+        ),
+        InvestmentEntity(
+            id = "inv_004",
+            planType = "Platinum Plan",
+            name = "Platinum Dream",
+            returnRate = "15%",
+            lockPeriod = "24 months",
+            initialAmount = "25000",
+            currentAmount = "28750",
+            startDate = "2023-04-10",
+            status = "Matured",
+            endDate = "2025-04-10"
+        )
+    )
+
 }

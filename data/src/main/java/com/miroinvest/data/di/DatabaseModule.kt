@@ -37,5 +37,8 @@ object DatabaseModule {
     fun providesPlanDao(database: AppDatabase) = database.PlanDao()
 
     @Provides
-    fun providesFuelSaveDao(database: AppDatabase) = database.transactionDao()
+    fun providesTransactionsDao(database: AppDatabase) = database.transactionDao()
+
+    @Provides
+    fun providesInvestmentsDao(database: AppDatabase) = database.investmentDao()
 }
